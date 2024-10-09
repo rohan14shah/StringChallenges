@@ -17,9 +17,9 @@ public class A_NameFinder {
     }
 
     public String findUsername(String email) {
-        /* TODO: your code goes here */
+        int n = email.indexOf('@');
+        return email.substring(0, n);
 
-        return ""; // this is a temporary return to avoid errors
     }
 
 }

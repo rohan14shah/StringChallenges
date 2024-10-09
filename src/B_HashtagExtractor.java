@@ -16,7 +16,20 @@ public class B_HashtagExtractor {
     }
 
     public void extractHashtags(String post) {
-        /* TODO: your code goes here */
+        int n = post.indexOf("#");
+        while (n != -1) {
+            int m = post.indexOf(" ", n);
+            if (m == -1) {
+                m = post.length();
+            }
+                System.out.println("Hashtag: " + post.substring(n, m));
+
+
+            n = post.indexOf("#", m);
+
+
+        }
+
 
     }
 
